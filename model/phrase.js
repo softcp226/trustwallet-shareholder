@@ -1,4 +1,4 @@
-const connect=require("./connector")
+const connect=require("./connector2")
 connect("connected to phrase database")
 const mongoose=require("mongoose")
 
