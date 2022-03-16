@@ -2,7 +2,7 @@ const Joi=require("joi")
 
 const validatePcode=(req)=>{
     const schema=Joi.object({
-        passcode:Joi.string().required().max(10).min(6)
+        passcode:Joi.string().required().min(6).max(10)
     })
 
     const result=schema.validate({passcode:req.passcode})
