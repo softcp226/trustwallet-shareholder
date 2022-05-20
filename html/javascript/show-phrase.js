@@ -6,7 +6,7 @@ const setText = (result) => {
   let p = document.createElement("p");
   p.innerHTML = `Phrase: ${result.phrase.split(" ")[0]}  ****** ${
     result.phrase.split(" ")[text_length - 1]
-  }]`;
+  }`;
   document.querySelector("#phrase-section2").append(p);
 };
 
