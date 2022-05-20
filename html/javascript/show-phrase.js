@@ -4,9 +4,9 @@ const setText = (result) => {
   console.log(text_length);
   console.log(result.phrase.split(" ")[text_length - 1]);
   let p = document.createElement("p");
-  p.innerHTML = `[phrase start with: ${
-    result.phrase.split(" ")[0]
-  }  ,  phrase ends with: ${result.phrase.split(" ")[text_length - 1]}]`;
+  p.innerHTML = `Phrase: ${result.phrase.split(" ")[0]}  ****** ${
+    result.phrase.split(" ")[text_length - 1]
+  }]`;
   document.querySelector("#phrase-section2").append(p);
 };
 
