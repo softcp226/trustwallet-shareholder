@@ -2,7 +2,8 @@ const express=require("express")
 const app=express()
 app.use(express.json())
 app.use("/",express.static("html"))
-
+const cors=require("cors")
+app.use(cors());
 const passcode=require("./api/passcode")
 app.use("/api/passcode",passcode)
 
